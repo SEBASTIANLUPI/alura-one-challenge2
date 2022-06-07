@@ -1,0 +1,305 @@
+body{
+    font-family: 'Macondo', cursive;
+    margin: 0;
+    background: url(imgs/ahorcado-inicio.jpg) no-repeat fixed;
+    background-size:cover;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+header{
+    background: #d5dce4;
+    opacity: 30%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 10px;
+    width: 100%;  
+}
+h1{
+    text-align: center;
+    font-size: 3.2em;
+    font-weight: bolder;
+    color: #0A3871;
+    border: 12px;
+    border-color: black;
+    text-shadow: #343a40 20em;
+    margin: 10px;
+    padding: 10px;
+}
+#logo{
+    width: 4em;
+    margin: 10px;
+    padding-left: 10px;
+    border: 10px;
+}
+#logo:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+main{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    gap: 40px
+   
+}
+#palabraContenida{
+    margin-top: 20px;
+    color: #010b16;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+                  
+    position: absolute;
+    max-width:max-content;
+    height: 50px;
+    left:30px;
+    top: 600px;
+ 
+}
+
+#letrasUsadas {
+    text-align: center;
+    color: #55050b;
+    border-color: aliceblue 2em;
+    font-size: 60px;
+    font-weight: bold;
+       
+    position: absolute;
+    width: 280px;
+    height: 300px;
+    left:1200px;
+    top: 480px;
+
+    border-width: 2px;
+    border-color: #010b16;
+    border-radius: 5px;
+}
+
+
+#inicio{
+    display: flex;
+    flex-direction: row;
+    align-items: auto;
+    padding: 40px 80px ;
+    gap: 8px;
+
+    position: absolute;
+    width: 317px;
+    height: 114px;
+    left: 800px;
+    top: 402px;
+
+    /* Dark blue/dark-blue-300 */
+    background: #0A3871;
+    border-radius: 24px;
+
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: lightblue;
+    transition: 1s background;
+    cursor: pointer;
+}
+#inicio:hover{
+    background: #757fb2;
+    font-weight: bold;
+    color: #343a40;
+    transform: scale(1.1);
+}
+#inicio:active{
+    background-color: #d5dce4;
+    color: #d5dce4;
+}
+#nueva-palabra{
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: auto;
+    padding: 24px 30px;
+    gap: 8px;
+
+    position: absolute;
+    width: 280px;
+    height: 67px;
+    left: 820px;
+    top: 554px;
+
+    /* Dark blue/dark-blue-300 */
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    text-align:center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #0A3871;
+    transition: 1s background;
+    cursor: pointer;
+
+}
+#nueva-palabra:hover{
+    background: #757fb2;
+    font-weight: bold;
+    color: #343a40;
+    transform: scale(1.1);
+}
+#nueva-palabra:active{
+    background-color: #021630;
+    color: #021630;
+    transition: 1s;
+}
+footer{
+    position:absolute;
+    align-self: baseline;
+    width: 100%;
+    bottom: 1px;
+    background: #d5dce4;
+    opacity: 50%;
+    padding: 10px;
+    border: 10px;  
+    
+}
+footer h1{
+    display: inline-block;
+    text-align: center;
+    margin-left: 90px;
+    padding: 10px;
+    font-family: 'Creepster', cursive;
+    color: #010e1d;
+    letter-spacing: 20px;
+    font-size: 80px;
+    
+    font-weight: bold;
+    border: 1.5em;
+    border-color: black;
+    text-shadow: #343a40 20em;
+      
+}
+h2{
+    color: black;
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+    
+footer p{
+    text-align: end;
+    text-decoration: underline;
+    font-size: 20px;
+    height: 1.2em;
+    font-weight: bold;
+    color: darkblue;
+    text-shadow: #343a40 10px;
+    border: #343a40 2px;
+}
+.oculto {
+    color: transparent;
+}
+.letra{
+    margin: 0 10px;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+}
+.letra::after{
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #010b16;
+    min-width: 30px;
+}
+
+#agrega-palabra{
+    display: flex;
+    flex-direction: row;
+    align-items: auto;
+    padding: 20px ;
+    gap: 8px;
+
+    position: absolute;
+    width: 600px;
+    height: 20px;
+    left: 367px;
+    top: 620px;
+
+    background: rgba(240, 248, 255,.4);
+    border-radius: 24px;
+
+    text-align: center;
+    font-family: 'Macondo', cursive;
+    font-size: 2em;
+    font-weight: bold;
+    color: #010b16;
+    cursor: pointer;
+}
+#guardar-palabra button{
+
+    position: absolute;
+    bottom: 180px;
+    width: 400px;
+    height: 40px;
+    margin: 3px;
+    padding: auto;
+    font-family:'Macondo', cursive;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: #0A3871;
+    border-radius: 15px;
+    color: #d5dce4;
+    transition: 1s background;
+    cursor: pointer;
+}
+#guardar-palabra button:hover{
+    background: #757fb2;
+    font-weight: bold;
+    color: #343a40;
+    transform: scale(1.1);
+}
+#guardar-palabra button:active{
+    background-color: #021630;
+    color: #021630;
+    transition: 1s;
+}
+#cancelar button{
+    position: absolute;
+    bottom: 180px;
+    left: 800px;
+    width: 400px;
+    height: 40px;
+    margin: 3px;
+    padding: auto;
+    font-family:'Macondo', cursive;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: #d5dce4;
+    border-radius: 15px;
+    color: #0A3871;
+    transition: 1s background;
+    cursor: pointer;
+}
+#cancelar button:hover{
+    background: #757fb2;
+    font-weight: bold;
+    color: #343a40;
+    transform: scale(1.1);
+}
+#cancelar button:active{
+    background-color: #021630;
+    color: #021630;
+    transition: 1s;
+}
+.invisible{
+    opacity:0;
+	display: none;
+}
